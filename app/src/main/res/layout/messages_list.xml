@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light">
+
+
+    <Spinner
+        android:id="@+id/userLang2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:backgroundTint="#f71c44"
+        android:maxHeight="100dp"
+        android:maxWidth="100dp"
+        android:scaleType="fitCenter"
+        android:textSize="20sp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.stfalcon.chatkit.messages.MessageInput
+        android:id="@+id/input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:animateLayoutChanges="true"
+        android:background="@android:color/background_light"
+        app:inputButtonDefaultBgColor="#e0e0e0"
+        app:inputButtonDefaultBgPressedColor="@color/turki"
+        app:inputButtonDefaultIconColor="@color/turki"
+        app:inputButtonDefaultIconPressedColor="@android:color/background_light"
+        app:inputButtonHeight="45dp"
+        app:inputButtonWidth="45dp"
+        app:inputHint="@string/hint_enter_a_message"
+        app:inputMaxLines="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="70dp"
+        android:gravity="center_horizontal"
+        android:text="@string/tap_to_catchapp"
+        android:textColor="#268e91"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="122dp"
+        android:src="@drawable/header"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:textColor="#268e91"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/avi1"
+        style="@style/AVLoadingIndicatorView.Large"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:visibility="invisible"
+        app:indicatorColor="#25c7cc"
+        app:indicatorName="LineScalePulseOutRapidIndicator"
+        app:layout_constraintBottom_toTopOf="@+id/input"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.stfalcon.chatkit.messages.MessagesList
+        android:id="@+id/messagesList"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="85dp"
+        android:isScrollContainer="true"
+        android:saveEnabled="true"
+        android:scrollbars="vertical"
+        android:soundEffectsEnabled="true"
+        app:dateHeaderTextColor="@android:color/background_light"
+        app:incomingDefaultBubbleColor="#f71c44"
+        app:incomingDefaultBubblePressedColor="@android:color/holo_orange_light"
+        app:incomingTextColor="@android:color/background_light"
+        app:incomingTimeTextColor="#f71c44"
+        app:layout_constraintBottom_toTopOf="@+id/input"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        app:outcomingDefaultBubbleColor="#fb542a"
+        app:outcomingDefaultBubblePressedColor="@android:color/holo_orange_light"
+        app:outcomingTextColor="@android:color/background_light"
+        app:outcomingTimeTextColor="#fb542a"
+        app:textAutoLink="all">
+
+    </com.stfalcon.chatkit.messages.MessagesList>
+
+    <!--<com.cleveroad.audiovisualization.GLAudioVisualizationView xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--android:id="@+id/visualizer_view"-->
+    <!--android:layout_width="418dp"-->
+    <!--android:layout_height="89dp"-->
+    <!--app:av_bubblesPerLayer="16"-->
+    <!--app:av_bubblesRandomizeSizes="true"-->
+    <!--app:av_bubblesSize="25dp"-->
+    <!--app:av_layersCount="4"-->
+    <!--app:av_wavesCount="7"-->
+    <!--app:av_wavesFooterHeight="170dp"-->
+    <!--app:av_wavesHeight="60dp"-->
+    <!--app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--app:layout_constraintEnd_toEndOf="parent"-->
+    <!--app:layout_constraintStart_toStartOf="parent" />-->
+</android.support.constraint.ConstraintLayout>

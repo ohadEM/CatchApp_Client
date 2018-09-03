@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Catchapp</string>
+    <string name="recognizedText"></string>
+    <string name="title">Title</string>
+    <string name="summery">Summery</string>
+    <string name="catchapp">CatchApp</string>
+    <string name="hello">hello</string>
+    <string-array name="planets_array">
+        <item>English</item>
+        <item>Hebrew</item>
+        <item>Spanish</item>
+        <item>German</item>
+        <item>Russian</item>
+        <item>French</item>
+        <item>Chinese</item>
+    </string-array>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="todo">TODO</string>
+    <string name="hint_enter_a_message">Enter a term</string>
+    <string name="tap_to_catchapp">Tap to Catchapp</string>
+    <string name="let_s_start_by_recording_the_lecture">Let’s start by recording the lecture</string>
+    <string name="tap_to_record">Tap to record!</string>
+    <string name="facebook_app_id">386075661889739</string>
+    <string name="fb_login_protocol_scheme">fb386075661889739</string>
+
+</resources>
